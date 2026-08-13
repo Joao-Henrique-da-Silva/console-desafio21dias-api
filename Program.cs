@@ -72,6 +72,8 @@ class Program
         foreach(var aluno in alunos)
         {
             Console.WriteLine($"Nome: {aluno.Nome}");
+            Console.WriteLine($"Matricula: {aluno.Matricula}");
+            Console.WriteLine($"Nome: {aluno.Notas}");
         }
 
 
