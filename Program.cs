@@ -37,17 +37,43 @@ class Program
         //    Console.WriteLine(item);
         //}
 
-        while(true)
-        {
-            Console.WriteLine("Digite\n1 - para sair\n0 - para continuar");
-            int sair = Convert.ToInt32(Console.ReadLine());
-            if (sair == 1) break;
-            else if(sair == 2) continue;
+        // while(true)
+        // {
+        //     Console.WriteLine("Digite\n1 - para sair\n0 - para continuar");
+        //     int sair = Convert.ToInt32(Console.ReadLine());
+        //     if (sair == 1) break;
+        //     else if(sair == 2) continue;
 
-            Console.WriteLine("Opaaa, ainda estou aqui");
-            Console.WriteLine("Hey, I'm still here");
-            Console.WriteLine("Holla, estoy aqui");
+        //     Console.WriteLine("Opaaa, ainda estou aqui");
+        //     Console.WriteLine("Hey, I'm still here");
+        //     Console.WriteLine("Holla, estoy aqui");
+        // }
+
+        List <dynamic> alunos = new List <dynamic>();
+        alunos.Add(new{
+            Nome = "João Henrique",
+            Matricula = "1001",
+            Notas = "7, 8, 9, 10"
+        });
+
+        alunos.Add(new{
+            Nome = "Danilo",
+            Matricula = "1002",
+            Notas = "10, 9, 10, 9"
+        });
+
+        alunos.Add(new{
+            Nome =  "José",
+            Matricula = "1003",
+            Notas = "10, 9, 9, 10"
+            
+        });
+
+        foreach(var aluno in alunos)
+        {
+            Console.WriteLine($"Nome: {aluno.Nome}");
         }
+
 
         return;
     }
