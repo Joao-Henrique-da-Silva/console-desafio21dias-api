@@ -129,16 +129,16 @@ class Program
                 Situação = resultado
             });
 
-            Console.Clear();
+            
             Console.WriteLine("cadastrar outro aluno s/n");
-            opcao = Console.ReadLine();
+            Opcao = Console.ReadLine();
             }
 
             Console.Clear();
-            foreach(var aluno in alunos);
+            foreach(var aluno in alunos)
             {
                 Console.WriteLine("____________________");
-                Console.WriteLine($"Nome: {aluno.Nome} - Matricula: {aluno.Matrícula}");
+                Console.WriteLine($"Nome: {aluno.Nome} - Matricula: {aluno.Matricula}");
                 Console.WriteLine("____________________");
                 Console.WriteLine($"Notas:");
                 int n = 1;
@@ -147,7 +147,7 @@ class Program
                     Console.WriteLine($"{n}º nota: {nota}");
                     n += 1;
                 }
-                Console.WriteLine($"Média: {Math.Round(aluno.media,1)} - Situação: {aluno.Situacao}");
+                Console.WriteLine($"Média: {Math.Round(aluno.media,1)} - Situação: {aluno.Situação}");
 
             }
                 Console.WriteLine("________________________");
